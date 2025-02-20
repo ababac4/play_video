@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>face/btn_avatar_a20.png</file>
+        <file>face/btn_avatar_a21.png</file>
+        <file>face/btn_avatar_a22.png</file>
+        <file>face/btn_avatar_a23.png</file>
+        <file>face/btn_avatar_a24.png</file>
+        <file>face/btn_avatar_a25.png</file>
+        <file>face/btn_avatar_a26.png</file>
+        <file>face/btn_avatar_a27.png</file>
+        <file>face/btn_avatar_a28.png</file>
+        <file>face/btn_avatar_a29.png</file>
+        <file>face/btn_avatar_a30.png</file>
+        <file>face/btn_avatar_a31.png</file>
+        <file>face/btn_avatar_a32.png</file>
+        <file>face/btn_avatar_a33.png</file>
+        <file>face/btn_avatar_a34.png</file>
+    </qresource>
+</RCC>
