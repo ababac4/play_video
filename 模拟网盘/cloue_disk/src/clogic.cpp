@@ -3,10 +3,6 @@
 #include <cctype> // for std::isspace
 #include <cstdlib> // 包含rand()和srand()
 #include <ctime>   // 包含time()
-#include <alibabacloud/core/AlibabaCloud.h>
-#include <alibabacloud/core/CommonRequest.h>
-#include <alibabacloud/core/CommonClient.h>
-#include <alibabacloud/core/CommonResponse.h>
 #include <string>
 #include <algorithm>
 
@@ -1850,33 +1846,6 @@ void CLogic::Send_Sms(sock_fd clientfd, char *szbuf, int nlen)
     char sms[1024]="";
     sprintf(sms,"{\"code\":\"%d\"}",random_number);
     cout<<sms<<endl;
-//        AlibabaCloud::InitializeSdk();
-//        AlibabaCloud::ClientConfiguration configuration( "cn-beijing" );
-//        // specify timeout when create client.
-//        configuration.setConnectTimeout(1500);
-//        configuration.setReadTimeout(4000);
-//        AlibabaCloud::Credentials credential(
-//        "LTAI5tAx353tHFCZZTd7chhf", "Cpxj1CC8W7WxYqVXlEKrfYaWog9IYL" ); //todo 完成替换
-//        AlibabaCloud::CommonClient client( credential, configuration );
-//        AlibabaCloud::CommonRequest
-//        request(AlibabaCloud::CommonRequest::RequestPattern::RpcPattern);
-//        request.setHttpMethod(AlibabaCloud::HttpRequest::Method::Post);
-//        request.setDomain("dysmsapi.aliyuncs.com");
-//        request.setVersion("2017-05-25");
-//        request.setQueryParameter("Action", "SendSms");
-//        request.setQueryParameter("SignName", "阿里云短信测试");
-//        request.setQueryParameter("TemplateCode", "SMS_154950909");
-//        request.setQueryParameter("PhoneNumbers", "19990780451"); //todo 完成替换
-//        request.setQueryParameter("TemplateParam", sms); //todo 完成替换
-//        auto response = client.commonResponse(request);
-//        if (response.isSuccess()) {
-//            printf("request success.\n");
-//            printf("result: %s\n", response.result().payload().c_str());
-//        } else {
-//            printf("error: %s\n", response.error().errorMessage().c_str());
-//            printf("request id: %s\n", response.error().requestId().c_str());
-//        }
-//        AlibabaCloud::ShutdownSdk();
 
 }
 
